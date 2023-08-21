@@ -1,0 +1,163 @@
+
+body{
+    display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+
+}
+
+.box{display: flex;
+align-items: center;
+flex-wrap: wrap;
+
+justify-content: center;
+
+width: 18em;height: 26em;
+    border-radius: 6px;
+    overflow: hidden;
+box-shadow: 0px 6px 12px 2px #000000;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 2%;
+position: relative;
+margin: 20px 4px;
+
+}
+
+
+.box::before{
+    content: '';
+    z-index:-1 ;
+    width: 5.8em;
+    border-radius: 0 0 100%;
+    height: 5.8em;
+    background-color: #149e9e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s}
+
+.box:hover::before{width: 100%;height: 100%;
+    border-radius: 0 0 0%;
+}
+
+.box:hover h2 span{color: black;}
+.box:hover h2{color: white;}
+.box:hover p,
+.box:hover .icons i{color: #ffffff;}
+.box:hover {box-shadow: 0px 6px 12px 2px #001aff;}
+.box:hover .img-box{ border: 3px solid white;}
+
+
+.box p{margin:3.6em 10px 0px;
+    font-size: 1em;
+    text-align: center;color: rgb(135, 136, 138);}
+
+.box #qote{font-size: 3.6em;
+    
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    color: white;
+    }
+
+    .img-box{width: 6em;
+        border: 4px solid #149e9e;
+        height: 6em;border-radius: 50%;}
+        .img-box:hover{border:4px solid #001aff;
+            border-radius: 50%;}
+    .img-box img{width: 100%;
+        border-radius: 50%;}
+
+
+
+
+
+
+        .icons{display: flex;
+            margin-top: -0.8em;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+            
+            position: relative;}
+
+.icons i{font-size: 2em;cursor: pointer;}
+
+.icons .fa-facebook{color:rgb(36, 93, 250);}
+
+.icons .fa-whatsapp{color:rgb(5, 171, 68);}
+
+.icons .fa-envelope{color: rgb(75, 75, 75);}
+
+.icons .fa-linkedin{color: #0084ff;}
+
+.icons i:hover {transform: translateY(-5px);}
+
+.icons .one{position: absolute;
+left: 1.2em;
+color:white;
+font-size: 1.1em;
+bottom: -16px;display: none;}
+.fa-facebook:hover + .one{display:block;}
+
+.icons .two{position: absolute;
+left: 4.6em;display: none;
+bottom: -16px;
+font-size: 1.1em;
+color:white;
+}
+
+.fa-whatsapp:hover + .two{display: block;}
+
+
+
+.icons .three{position: absolute;
+    display: none;
+    bottom: -16px;
+left: 9.1em;
+font-size: 1.1em;
+color:white;
+}
+
+
+.fa-envelope:hover + .three{display: block;}
+
+     
+
+.four{position: absolute;
+left: 12em;bottom: -16px;
+display: none;
+color:white;
+font-size: 1.1em;
+}
+.fa-linkedin:hover + .four{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .box h2{font-size: 1.2em;
+                color: #149e9e;
+                font-family: Georgia;
+            text-align: center;margin-top: -4px;
+            }
+
+
+            .box h2 span{font-size: 0.7em;
+                font-weight: 600;
+            color: gray;}
